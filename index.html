@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+	<title>Team Fortress 2 #savetf2</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+    <script type="text/javascript" src="scripts/male.js"></script>
+<script>
+      var photoCount = 4;
+      //змінна кількість фотуів , які треба перегорнути
+      var currentPhotoIndex = 1;
+      //змінна яка містить індекч поточного номера фото 
+      function showNextPhoto(){
+      //створюємо функцію для гортання фото
+        currentPhotoIndex++;
+        //додаємо 1 до поточного зміної із номером фото
+        if (currentPhotoIndex > photoCount) currentPhotoIndex = 1;
+        //умова , що дозволяє по колу перемикати фото від 1 до 5 влючно, а потім знаву від 1 до 5 включно
+        var elementPhoto = document.getElementById("currentPhoto");
+        //помістити у змінні витягнути елемент
+        elementPhoto.src ="images/photo" + currentPhotoIndex + ".png";//заміни номер у назві фото на поточний
+      }
+</script>
+</head>
+<body>
+
+
+	<header>
+	<h1>Team Fortress 2 #savetf2</h1>
+      <nav class="">
+  <ul>
+  <li><a href="#">page</a></li>
+  <li><a href="#">Halloween</a>
+  <ul>
+    <li><a href="index.html">Brundle Bundle</a></li>
+    <li><a href="index2.html">FrankenHeavy</a></li>
+  </ul>
+</li>
+  <li><a href="#">more</a></li>
+  <li><a href="#">comic</a></li>
+  </ul>
+</nav>
+	</header> 
+   <main>
+
+
+<article>
+      <h2>history</h2>
+<hr>
+      <p>Equipping all items in the set increases the Engineer's vocalizations pitch by 145%.
+
+</p>
+       <p>This set includes Halloween-restricted items and can only be worn around Halloween or during a Full Moon; at other times of the year, it does not appear in gameplay or grant its effect, unless the server has Halloween mode enabled. However, it can be equipped at any time and can still be viewed on the loadout screen even when it is not visible during games.
+</p>
+<hr>
+    <h2>Update history</h2>
+
+      <p>October 27, 2011 Patch (Very Scary Halloween Special)
+
+The Brundle Bundle was added to the game.
+</p>
+<hr>
+    <h2>Bugs</h2>
+
+      <p>Spies disguised as an Engineer using the Brundle Bundle set do not have high-pitched voice commands.</p>
+<p>With this set equipped, the Engineer's death sounds do not change pitch if he is killed.</p>
+
+<p>The sounds of special taunts such as the Rancho Relaxo and the Dueling Banjo are affected by the pitch change of this set, even though they are not spoken Engineer lines.</p>
+
+</p>
+<hr>
+    <h2>Demonstration</h2>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/LfMKrs_bx0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+ </article>
+<hr>
+<p></p>
+      </article>
+      <aside>
+
+      <section>
+
+     <h3>Brundle Bundle
+</h2>
+<hr>
+
+      <p>Photo The Grand Duchess</p>
+<div id="1">
+    <img id="currentPhoto" src="images/photo1.png" />
+  </div>
+  <button onclick="showNextPhoto()">next photo</button>
+     
+      </section>
+
+      </aside>
+     </main>
+      
+
+     <footer> 
+      <p>Copyright © 2022 Adobe. All rights reserved.
+</p>
+
+     
+
+      </footer> 
+
+      
+
+</body>
+</html>
